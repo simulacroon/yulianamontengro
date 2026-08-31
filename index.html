@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portafolio de Yulia — danza, performance, coreografía e investigación del movimiento."
+    >
+
+    <title>Yulia — Dance Artist</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CURSOR PERSONALIZADO
+    ====================================================== -->
+
+    <div
+        class="cursor"
+        id="cursor"
+        aria-hidden="true"
+    >
+        <span></span>
+    </div>
+
+
+
+    <!-- =====================================================
+         ENCABEZADO
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <a
+            class="wordmark"
+            href="#inicio"
+            aria-label="Yulia — volver al inicio"
+        >
+            YULIANA
+        </a>
+
+        <div class="edition">
+
+            DANCE ARTIST
+
+            <br>
+
+            BOGOTÁ · 2026
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MENÚ VERTICAL DERECHO
+    ====================================================== -->
+
+    <nav
+        class="side-nav"
+        aria-label="Navegación principal"
+    >
+
+        <a href="#inicio">
+            Home
+        </a>
+
+        <a href="#obra">
+            Work
+        </a>
+
+        <a href="#sobre-mi">
+            About
+        </a>
+
+        <a href="#contacto">
+            Contact
+        </a>
+
+    </nav>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             PORTADA
+        ================================================== -->
+
+   <!-- =================================================
+     PORTADA
+================================================== -->
+
+<section
+    class="hero"
+    id="inicio"
+>
+
+
+    <!-- FOTOGRAFÍA EN NEGATIVO -->
+
+    <div
+        class="hero-photo"
+        aria-hidden="true"
+    >
+
+        <img
+            src="img/10.jpg"
+            alt=""
+        >
+
+    </div>
+
+
+
+    <!-- CAPAS DE DEGRADADO PASTEL -->
+
+    <div
+        class="hero-pastel-gradient"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="hero-light"
+        aria-hidden="true"
+    ></div>
+
+
+
+    <!-- INFORMACIÓN LATERAL -->
+
+    <p class="eyebrow">
+
+        MOVEMENT · BODY · SPACE
+
+    </p>
+
+
+
+    <!-- CÍRCULO CENTRAL -->
+
+    <a
+        class="scroll-cue"
+        href="#obra"
+        aria-label="Bajar hacia la obra"
+    >
+
+        <span>
+            SCROLL TO MOVE
+        </span>
+
+        <i aria-hidden="true">
+            ↓
+        </i>
+
+    </a>
+
+
+
+    <!-- NOMBRE -->
+
+    <h1 class="hero-name">
+
+        Yuliana Montenegro
+
+    </h1>
+
+
+
+    <!-- INFORMACIÓN INFERIOR -->
+
+    <p class="hero-note">
+
+        PERFORMANCE / CHOREOGRAPHY / RESEARCH
+
+    </p>
+
+
+    <p class="hero-year">
+
+        BOGOTÁ · 2026
+
+    </p>
+
+</section>
+
+
+
+        <!-- =================================================
+             STOP-MOTION CONTROLADO POR SCROLL
+
+             Las tres fotografías deben tener:
+             - Las mismas dimensiones.
+             - Un encuadre parecido.
+             - La bailarina en una posición coherente.
+        ================================================== -->
+
+        <section
+            class="scroll-story"
+            id="obra"
+        >
+
+            <div class="story-sticky">
+
+
+                <!-- INFORMACIÓN IZQUIERDA -->
+
+                <div class="story-meta story-meta-left">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+
+                        DANZA URBANA Y CONTEMPORÁNEA
+
+                        <br>
+
+                        DANZA CLÁSICA  
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- FOTOGRAFÍA CENTRAL -->
+
+                <div class="stopmotion-stage">
+
+
+                    <!-- FOTOGRAMA 01 -->
+
+                    <figure
+                        class="stopmotion-frame is-active"
+                        data-frame="0"
+                    >
+
+                        <img
+                            src="img/yulia1.jpeg"
+                            alt="Yulia en movimiento — fotograma uno"
+                        >
+
+                    </figure>
+
+
+
+                    <!-- FOTOGRAMA 02 -->
+
+                    <figure
+                        class="stopmotion-frame"
+                        data-frame="1"
+                    >
+
+                        <img
+                            src="img/yulia2.jpeg"
+                            alt="Yulia en movimiento — fotograma dos"
+                        >
+
+                    </figure>
+
+
+
+                    <!-- FOTOGRAMA 03 -->
+
+                    <figure
+                        class="stopmotion-frame"
+                        data-frame="2"
+                    >
+
+                        <img
+                            src="img/yulia3.jpeg"
+                            alt="Yulia en movimiento — fotograma tres"
+                        >
+
+                    </figure>
+
+
+
+                    <!-- CONTADOR -->
+
+                    <div
+                        class="frame-counter"
+                        aria-live="polite"
+                    >
+
+                        <span id="current-frame">
+                            01
+                        </span>
+
+                        <span>
+                            /
+                        </span>
+
+                        <span>
+                            03
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- INFORMACIÓN DERECHA -->
+
+                <div class="story-meta story-meta-right">
+
+                    <p>
+
+                        DANZAS TRADICIONALES 
+                        <br>
+
+                        DEL TERRITORIO COLOMBIANO
+
+
+                    </p>
+
+                    <span>
+                        03
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TEXTO DE PRESENTACIÓN
+        ================================================== -->
+
+        <section
+            class="manifesto"
+            id="sobre-mi"
+        >
+
+            <p class="section-tag">
+                ABOUT / 02
+            </p>
+
+
+            <h2>
+
+                Me mueve el estudio del cuerpo, el performance, 
+                la instalación escénica e investigación del movimiento para 
+                la participación de todos los cuerpos.
+
+            </h2>
+
+
+            <p class="manifesto-small">
+
+                Artista danzaria, bailarina y creativa de las artes vivas y el movimiento. 
+                Hace más de ocho años en formación empírica en diversas técnicas de danza urbana y contemporánea. 
+                Actualmente estudiante del pregrado Arte Danzario de la Academia Superior de Artes UDFJC. Mujer discapacitada usuaria de prótesis, bailarina en danza contemporánea y urbana.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             GALERÍA
+
+             Al acercar el cursor a cada fotografía aparecerá
+             el texto contenido dentro de .photo-description.
+        ================================================== -->
+
+        <section
+            class="gallery"
+            aria-label="Selección fotográfica de Yulia"
+        >
+
+
+            <!-- TÍTULO CENTRAL -->
+
+            <div class="gallery-title">
+
+                <span>
+                    ( SELECTED MOVEMENTS )
+                </span>
+
+                <strong>
+
+                    Motion
+
+                    <br>
+
+                    Studies
+
+                </strong>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FOTOGRAFÍA 04
+            ================================================== -->
+
+            <article
+                class="gallery-item item-left"
+                tabindex="0"
+            >
+
+                <div class="gallery-image">
+
+                    <img
+                        src="img/1.JPG"
+                        alt="Retrato de Yulia"
+                        loading="lazy"
+                    >
+
+
+                    <div class="photo-description">
+
+                        <span class="description-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Body / Archive
+                            </h3>
+
+                            <p>
+
+                                A study of the body as a living
+                                archive. Bogotá, 2026.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="photo-footer">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+                        BODY / ARCHIVE
+                    </p>
+
+                </footer>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FOTOGRAFÍA 05
+            ================================================== -->
+
+            <article
+                class="gallery-item item-right"
+                tabindex="0"
+            >
+
+                <div class="gallery-image">
+
+                    <img
+                        src="img/2.JPG"
+                        alt="Yulia en escena"
+                        loading="lazy"
+                    >
+
+
+                    <div class="photo-description">
+
+                        <span class="description-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                The Space Between
+                            </h3>
+
+                            <p>
+
+                                A suspended gesture between tension,
+                                silence and stillness.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="photo-footer">
+
+                    <span>
+                        02
+                    </span>
+
+                    <p>
+                        THE SPACE BETWEEN
+                    </p>
+
+                </footer>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FOTOGRAFÍA 06
+            ================================================== -->
+
+            <article
+                class="gallery-item item-center"
+                tabindex="0"
+            >
+
+                <div class="gallery-image">
+
+                    <img
+                        src="img/3.JPG"
+                        alt="Estudio de movimiento de Yulia"
+                        loading="lazy"
+                    >
+
+
+                    <div class="photo-description">
+
+                        <span class="description-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Falling / Rising
+                            </h3>
+
+                            <p>
+
+                                A choreography created from falling,
+                                balance, resistance and return.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="photo-footer">
+
+                    <span>
+                        03
+                    </span>
+
+                    <p>
+                        FALLING / RISING
+                    </p>
+
+                </footer>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FOTOGRAFÍA 07
+            ================================================== -->
+
+            <article
+                class="gallery-item item-low-left"
+                tabindex="0"
+            >
+
+                <div class="gallery-image">
+
+                    <img
+                        src="img/8.JPG"
+                        alt="Detalle coreográfico de Yulia"
+                        loading="lazy"
+                    >
+
+
+                    <div class="photo-description">
+
+                        <span class="description-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                A Gesture Repeated
+                            </h3>
+
+                            <p>
+
+                                Repetition transforms a familiar
+                                gesture into a new language.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="photo-footer">
+
+                    <span>
+                        04
+                    </span>
+
+                    <p>
+                        A GESTURE REPEATED
+                    </p>
+
+                </footer>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FOTOGRAFÍA 08
+            ================================================== -->
+
+            <article
+                class="gallery-item item-low-right"
+                tabindex="0"
+            >
+
+                <div class="gallery-image">
+
+                    <img
+                        src="img/5.JPG"
+                        alt="Performance en vivo de Yulia"
+                        loading="lazy"
+                    >
+
+
+                    <div class="photo-description">
+
+                        <span class="description-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Live / 2026
+                            </h3>
+
+                            <p>
+
+                                Live performance, movement research
+                                and spatial improvisation.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="photo-footer">
+
+                    <span>
+                        05
+                    </span>
+
+                    <p>
+                        LIVE / 2026
+                    </p>
+
+                </footer>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FOTOGRAFÍA 09
+            ================================================== -->
+
+            <article
+                class="gallery-item item-final-left"
+                tabindex="0"
+            >
+
+                <div class="gallery-image">
+
+                    <img
+                        src="img/6.JPG"
+                        alt="Yulia relacionando el cuerpo con el espacio"
+                        loading="lazy"
+                    >
+
+
+                    <div class="photo-description">
+
+                        <span class="description-number">
+                            06
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Space / Trace
+                            </h3>
+
+                            <p>
+
+                                The body redraws the architecture
+                                through rhythm, movement and pause.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="photo-footer">
+
+                    <span>
+                        06
+                    </span>
+
+                    <p>
+                        SPACE / TRACE
+                    </p>
+
+                </footer>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FOTOGRAFÍA 10
+            ================================================== -->
+
+            <article
+                class="gallery-item item-final-right"
+                tabindex="0"
+            >
+
+                <div class="gallery-image">
+
+                    <img
+                        src="img/7.JPG"
+                        alt="Retrato final de Yulia"
+                        loading="lazy"
+                    >
+
+
+                    <div class="photo-description">
+
+                        <span class="description-number">
+                            07
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Afterimage
+                            </h3>
+
+                            <p>
+
+                                A final image held between presence,
+                                memory and disappearance.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <footer class="photo-footer">
+
+                    <span>
+                        07
+                    </span>
+
+                    <p>
+                        AFTERIMAGE
+                    </p>
+
+                </footer>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACTO
+        ================================================== -->
+
+        <section
+            class="contact"
+            id="contacto"
+        >
+
+            <div class="contact-line"></div>
+
+
+            <p class="section-tag">
+                CONTACT / 03
+            </p>
+
+
+            <h2>
+                Time to connect
+            </h2>
+
+
+
+            <!-- IMAGEN / TARJETA CENTRAL -->
+
+            <div class="contact-card">
+
+                <div
+                    class="contact-orbit"
+                    aria-hidden="true"
+                >
+
+                    <span>
+
+                        HELLO · LET'S MOVE · HELLO · LET'S MOVE ·
+
+                    </span>
+
+                </div>
+
+
+                <div class="contact-window">
+
+                    <span aria-hidden="true">
+                        Y
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <p class="contact-copy">
+
+                ONE SMALL ACTION STANDS BETWEEN US AND A NEW
+                COLLABORATION. A GREAT JOURNEY BEGINS WITH
+                THE FIRST MOVEMENT.
+
+            </p>
+
+
+
+            <!-- CAMBIA ESTE CORREO -->
+
+            <a
+                class="mail-button"
+                href="mailto:montenegrocabezasyuliana@gmail.com"
+            >
+
+                <span>
+                    montenegrocabezasyuliana@gmail.com
+                </span>
+
+                <b aria-hidden="true">
+                    ↗
+                </b>
+
+            </a>
+
+
+
+            <footer class="site-footer">
+
+                <span>
+                    YULIANA © 2026
+                </span>
+
+                <span>
+                    BOGOTÁ / COLOMBIA
+                </span>
+
+                <a href="#inicio">
+                    BACK TO TOP ↑
+                </a>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
