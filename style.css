@@ -1505,20 +1505,41 @@ h3 {
         0.04em;
 }
 
-.mail-button {
+/* =========================================================
+   ENLACES DE CONTACTO
+========================================================= */
+
+.contact-links {
     display: flex;
+
+    width:
+        min(620px, 88vw);
+
+    flex-direction:
+        column;
+
+    gap:
+        8px;
+
+    margin:
+        2vh 0 8vh;
+}
+
+
+/* =========================================================
+   BOTONES DE CONTACTO
+========================================================= */
+
+.contact-button {
+    display: grid;
+
+    grid-template-columns:
+        90px 1fr auto;
 
     align-items:
         center;
 
-    justify-content:
-        center;
-
-    width:
-        min(510px, 86vw);
-
-    margin:
-        2vh 0 8vh;
+    width: 100%;
 
     padding:
         15px 18px;
@@ -1526,19 +1547,23 @@ h3 {
     background:
         #f5f3f4;
 
+    border:
+        1px solid transparent;
+
     border-radius:
         999px;
 
-    font-size:
-        13px;
+    color:
+        var(--black);
 
     transition:
         background-color 0.3s ease,
         color 0.3s ease,
+        border-color 0.3s ease,
         transform 0.3s ease;
 }
 
-.mail-button:hover {
+.contact-button:hover {
     background:
         var(--black);
 
@@ -1549,14 +1574,120 @@ h3 {
         scale(0.985);
 }
 
-.mail-button b {
+.contact-button-label {
+    font-family:
+        monospace;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.1em;
+
+    text-align:
+        left;
+
+    opacity:
+        0.55;
+}
+
+.contact-button-value {
+    overflow:
+        hidden;
+
+    font-size:
+        12px;
+
+    text-align:
+        center;
+
+    text-overflow:
+        ellipsis;
+
+    white-space:
+        nowrap;
+}
+
+.contact-button b {
     margin-left:
         auto;
 
     font-size:
         20px;
+
+    font-weight:
+        400;
+
+    transition:
+        transform 0.3s ease;
 }
 
+.contact-button:hover b {
+    transform:
+        translate(3px, -3px);
+}
+
+
+/* =========================================================
+   INSTAGRAM
+========================================================= */
+
+.instagram-button {
+    background:
+        rgba(245, 243, 244, 0.48);
+
+    border-color:
+        rgba(16, 17, 19, 0.25);
+}
+
+
+/* =========================================================
+   ENLACES DEL FOOTER
+========================================================= */
+
+.footer-links {
+    display: flex;
+
+    gap:
+        25px;
+}
+
+.footer-links a {
+    position:
+        relative;
+}
+
+.footer-links a::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    bottom: -4px;
+    left: 0;
+
+    height: 1px;
+
+    background:
+        currentColor;
+
+    transform:
+        scaleX(0);
+
+    transform-origin:
+        right center;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    transform:
+        scaleX(1);
+
+    transform-origin:
+        left center;
+}
 
 /* =========================================================
    FOOTER
@@ -1715,6 +1846,47 @@ h3 {
         display:
             none;
     }
+
+   /* CONTACTO EN CELULAR */
+
+.contact-links {
+    width:
+        88vw;
+
+    margin-bottom:
+        7vh;
+}
+
+.contact-button {
+    grid-template-columns:
+        72px minmax(0, 1fr) auto;
+
+    padding:
+        14px 15px;
+}
+
+.contact-button-label {
+    font-size:
+        7px;
+}
+
+.contact-button-value {
+    font-size:
+        9px;
+
+    text-align:
+        left;
+}
+
+.footer-links {
+    width: 100%;
+
+    justify-content:
+        space-between;
+
+    margin-top:
+        8px;
+}
 
 
     /* ENCABEZADO */
